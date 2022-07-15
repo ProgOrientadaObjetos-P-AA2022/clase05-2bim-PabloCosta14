@@ -4,8 +4,6 @@
  */
 package paquete10;
 
-import java.util.ArrayList;
-
 public class Principal {
 
     public static void main(String[] args) {
@@ -39,13 +37,16 @@ public class Principal {
 
         System.out.println(gp3.obtenerUrl());
 
-        APIStarPlus sp = new APIStarPlus();
+     APIStarPlus api4 = new APIStarPlus();
+        api4.establecerApiKey("123455");
 
-        String nombreArchivo = "Peliculas.data";
+        GeneradorPeliculas gp4 = new GeneradorPeliculas();
+        gp4.establecerLlave(api4);
+        gp4.establecerUrl("http://api.movie?api=");
+        System.out.println("API Star Plus");
+        System.out.println(gp4.obtenerUrl());
 
-        ArrayList<GeneradorPeliculas> gn = new ArrayList<>();
-        gn.add(gp);
-        gn.add(gp2);
+        
 
     }
 }

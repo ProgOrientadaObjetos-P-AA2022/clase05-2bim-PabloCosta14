@@ -11,13 +11,13 @@ import java.io.ObjectInputStream;
  * @author SALA I
  */
 public class Principal3 {
-    private ObjectInputStream entrada;
- 
-    
-    public Principal3(String n){
-    
-    
-    
+    public static void main(String[] args) {
+        String nombreArchivo = "Peliculas.data";
+        LecturaArchivoSecuencial lectura
+                = new LecturaArchivoSecuencial(nombreArchivo);
+        lectura.establecerPeliculas();
+        System.out.println(lectura);
     }
+   
 }
 
